@@ -1,0 +1,40 @@
+/* Configurações Globais */
+html { scroll-behavior: smooth; }
+
+/* Tailwind Config Injection */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .nav-link { @apply hover:text-rosaforte transition duration-300; }
+    
+    .btn-primary { @apply bg-rosaforte text-white px-8 py-4 rounded-xl font-bold shadow-lg hover:scale-105 transition-all text-center inline-block; }
+    
+    .btn-secondary { @apply border-2 border-rosaforte text-rosaforte px-8 py-4 rounded-xl font-bold hover:bg-white transition-all text-center inline-block; }
+
+    .btn-primary-small { @apply bg-rosaforte text-white px-6 py-2 rounded-full hover:bg-pink-500 transition shadow-md flex items-center gap-2; }
+
+    .section-title { @apply text-3xl md:text-5xl font-serif font-bold text-slate-800 mb-16; }
+
+    .card-procedimento { @apply group cursor-default; }
+
+    .img-container { @apply relative overflow-hidden rounded-[32px] mb-6 h-64 bg-rosabebê border border-pink-100; }
+    
+    .img-container img { @apply w-full h-full object-cover transition-transform duration-500 group-hover:scale-110; }
+}
+
+.gradient-rosa { background: linear-gradient(135deg, #FFF5F7 0%, #FDF2F8 100%); }
+.glass-card { background: rgba(255, 255, 255, 0.4); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.6); }
+.logo-small { width: 40px; height: 40px; }
+.star-rating { color: #FBBF24; } /* Amarelo Google */
+.testimonial-card { 
+    @apply bg-white p-8 rounded-[32px] border border-pink-50 shadow-sm hover:shadow-md transition-shadow duration-300;
+}
+
+.footer-link {
+    @apply text-slate-500 hover:text-rosaforte transition-colors duration-300 text-sm;
+}
+.footer-social-icon {
+    @apply w-10 h-10 bg-white border border-pink-100 rounded-full flex items-center justify-center hover:bg-rosaforte hover:text-white hover:border-rosaforte transition-all duration-300 shadow-sm;
+}

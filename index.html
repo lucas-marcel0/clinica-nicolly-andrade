@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dra. Nicolly Andrade | Odontologia Estética em Maringá</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="text-slate-700 bg-white">
+
+    <header class="fixed w-full bg-white/70 backdrop-blur-md shadow-sm z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <img src="assets/logo.png" alt="Logo Dra. Nicolly Andrade" class="logo-small">
+                <div class="text-2xl font-serif font-bold text-slate-800 tracking-tight">
+                    Dra. <span class="text-rosaforte">Nicolly Andrade</span>
+                </div>
+            </div>
+            <div class="hidden md:flex space-x-8 font-medium items-center">
+                <a href="#inicio" class="nav-link">Início</a>
+                <a href="#servicos" class="nav-link">Procedimentos</a>
+                <a href="#clinica" class="nav-link">Sobre</a>
+                <a href="https://wa.me/5544999999999" target="_blank" class="btn-primary-small">
+                    Agendar no WhatsApp
+                </a>
+            </div>
+        </nav>
+    </header>
+
+     <section id="inicio" class="pt-32 pb-20 gradient-rosa overflow-hidden">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
+            <!-- Texto -->
+            <div class="md:w-1/2 mb-12 md:mb-0 z-10">
+                <h1 class="text-4xl md:text-6xl font-serif font-bold leading-tight mb-6 text-slate-800">
+                    Realçando a beleza do seu <span class="text-rosaforte italic">melhor sorriso.</span>
+                </h1>
+                <p class="text-lg text-slate-600 mb-8 max-w-lg leading-relaxed">
+                    Unimos alta tecnologia e um toque de delicadeza para proporcionar uma experiência odontológica leve, indolor e transformadora.
+                </p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="#servicos" class="bg-rosaforte text-white px-8 py-4 rounded-xl font-bold shadow-lg hover:shadow-pink-200 hover:scale-105 transition-all text-center">
+                        Conhecer Procedimentos
+                    </a>
+                    <a href="#clinica" class="border-2 border-rosaforte text-rosaforte px-8 py-4 rounded-xl font-bold hover:bg-white transition text-center">
+                        Sobre a Dra.
+                    </a>
+                </div>
+            </div>
+
+            <!-- Imagem e Elementos Visuais -->
+            <div class="md:w-1/2 relative flex justify-center">
+                <!-- Círculo de fundo decorativo -->
+                <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-rosaprincipal/30 rounded-full blur-3xl"></div>
+                
+                <!-- Placeholder da foto principal -->
+                <div class="relative w-full max-w-md h-[450px] bg-white rounded-[40px] shadow-2xl overflow-hidden border-8 border-white">
+                    <div class="w-full h-full bg-pink-50 flex items-center justify-center text-rosaforte italic px-10 text-center">
+                        <img src="assets/logo.png" alt="Logo Dra. Nicolly Andrade" class="logo-large mb-4">
+                        [Inserir Foto da Dra. sorrindo ou em atendimento]
+                    </div>
+                </div>
+
+                <!-- Card de Prova Social -->
+                <div class="absolute -bottom-6 right-0 md:-right-4 glass-card p-5 rounded-2xl shadow-xl">
+                    <div class="flex items-center space-x-3">
+                        <div class="flex -space-x-2">
+                            <div class="w-8 h-8 rounded-full bg-pink-300 border-2 border-white"></div>
+                            <div class="w-8 h-8 rounded-full bg-pink-200 border-2 border-white"></div>
+                            <div class="w-8 h-8 rounded-full bg-pink-100 border-2 border-white"></div>
+                        </div>
+                        <div>
+                            <p class="text-sm font-bold text-slate-800">Avaliação 5 estrelas</p>
+                            <p class="text-xs text-slate-500 italic">"Atendimento impecável!"</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicos" class=" pb-20 gradient-rosa overflow-hidden">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-5xl font-serif font-bold text-slate-800 mb-4">Nossas Especialidades</h2>
+            <p class="text-slate-500 max-w-2xl mx-auto mb-16">
+                Combinamos ciência e estética para cuidar da sua saúde bucal em cada detalhe.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                
+                <!-- Procedimento 1: Clareamento -->
+                <div class="group">
+                    <div class="relative overflow-hidden rounded-[32px] mb-6 h-64 bg-rosabebê border border-pink-100">
+                        <!-- Imagem do Procedimento -->
+                        <img src="assets/Clareamento dental.png" alt="Clareamento Dental" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-pink-100/50 to-transparent"></div>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-2">Clareamento Dental</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed px-4">
+                        Técnicas seguras para recuperar o brilho natural e a brancura do seu sorriso.
+                    </p>
+                </div>
+
+                <!-- Procedimento 2: Harmonização -->
+                <div class="group">
+                    <div class="relative overflow-hidden rounded-[32px] mb-6 h-64 bg-rosabebê border border-pink-100">
+                        <img src="assets/harmonizacao-orofacial.png" alt="Harmonização Orofacial" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-pink-100/50 to-transparent"></div>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-2">Harmonização Orofacial</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed px-4">
+                        Procedimentos que equilibram a estética do rosto com delicadeza e precisão.
+                    </p>
+                </div>
+
+                <!-- Procedimento 3: Facetas/Lentes -->
+                <div class="group">
+                    <div class="relative overflow-hidden rounded-[32px] mb-6 h-64 bg-rosabebê border border-pink-100">
+                        <img src="assets/lente-de-contato-dental.png" alt="Lentes de Contato Dental" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-pink-100/50 to-transparent"></div>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-2">Lentes de Contato</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed px-4">
+                        A solução ideal para corrigir imperfeições de cor e formato de forma definitiva.
+                    </p>
+                </div>
+
+                <!-- Procedimento 4: Limpeza -->
+                <div class="group">
+                    <div class="relative overflow-hidden rounded-[32px] mb-6 h-64 bg-rosabebê border border-pink-100">
+                        <img src="assets/odontologia-preventiva.png" alt="Saúde Preventiva" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-pink-100/50 to-transparent"></div>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-2">Saúde Preventiva</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed px-4">
+                        Prevenção e cuidados contínuos para manter sua saúde bucal sempre em dia.
+                    </p>
+                </div>
+
+                <!-- Procedimento 5: Alinhadores -->
+                <div class="group">
+                    <div class="relative overflow-hidden rounded-[32px] mb-6 h-64 bg-rosabebê border border-pink-100">
+                        <img src="assets/invisalign-clearcorrect-aparelho-transparente2.png" alt="Aparelhos Invisíveis" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-pink-100/50 to-transparent"></div>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-2">Aparelhos Invisíveis</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed px-4">
+                        Ortodontia moderna e discreta para alinhar seus dentes sem o uso de metais.
+                    </p>
+                </div>
+
+                <!-- Card de CTA (Chamada para Ação) -->
+                <div class="bg-rosaforte rounded-[40px] p-8 flex flex-col justify-center items-center text-white shadow-xl shadow-pink-100 h-64 mt-0">
+                    <h3 class="text-xl font-bold mb-4 text-center">Pronta para transformar seu sorriso?</h3>
+                    <a href="https://wa.me/seunumero" class="bg-white text-rosaforte px-6 py-3 rounded-2xl font-bold hover:scale-105 transition-transform text-center shadow-md">
+                        Agendar via WhatsApp
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+     <section id="clinica" class="py-24 gradient-rosa">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center gap-16">
+                
+                <!-- Coluna da Foto -->
+                <div class="md:w-5/12 relative">
+                    <!-- Elemento decorativo atrás da foto -->
+                    <div class="absolute -top-6 -left-6 w-full h-full border-2 border-rosaforte rounded-[40px] z-0"></div>
+                    
+                    <div class="relative z-10 rounded-[40px] overflow-hidden shadow-2xl bg-white p-3">
+                        <img src="foto-dra-sobre.jpg" alt="Dra. NomeDela" class="rounded-[32px] w-full h-auto object-cover">
+                    </div>
+
+                    <!-- Selo de Especialista -->
+                    <div class="absolute -bottom-8 -right-8 bg-white p-6 rounded-3xl shadow-xl z-20 flex items-center gap-4 border border-pink-50">
+                        <div class="bg-rosaprincipal w-12 h-12 rounded-full flex items-center justify-center text-white font-bold">
+                            ✓
+                        </div>
+                        <div>
+                            <p class="text-xs text-slate-500 uppercase tracking-widest">Especialista em</p>
+                            <p class="text-slate-800 font-bold">Estética Avançada</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Coluna de Texto -->
+                <div class="md:w-7/12">
+                    <span class="text-rosaforte font-bold tracking-[0.2em] uppercase text-sm mb-4 block">Excelência e Cuidado</span>
+                    <h2 class="text-3xl md:text-5xl font-serif font-bold text-slate-800 mb-8 leading-tight">
+                        Cuidando do seu sorriso com <span class="italic">ciência e sensibilidade</span>.
+                    </h2>
+                    
+                    <div class="space-y-6 text-slate-600 leading-relaxed text-lg">
+                        <p>
+                            Com uma trajetória pautada na excelência técnica e no atendimento acolhedor, a <strong>Dra. Nicolly Andrade</strong> acredita que a odontologia vai muito além de tratamentos clínicos; trata-se de devolver a confiança e o bem-estar a cada paciente.
+                        </p>
+                        <p>
+                            Especialista apaixonada pela estética dental, ela combina tecnologia de ponta com um olhar minucioso para criar sorrisos que respeitam a identidade e a beleza natural de cada rosto.
+                        </p>
+                    </div>
+
+                    <!-- Diferenciais Rápidos -->
+                    <div class="grid grid-cols-2 gap-6 mt-10">
+                        <div class="flex items-start gap-3">
+                            <div class="text-rosaforte">✦</div>
+                            <div>
+                                <h4 class="font-bold text-slate-800">Atendimento Individual</h4>
+                                <p class="text-sm">Cada plano é único.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="text-rosaforte">✦</div>
+                            <div>
+                                <h4 class="font-bold text-slate-800">Tecnologia</h4>
+                                <p class="text-sm">Equipamentos de última geração.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-12">
+                        <a href="#contato" class="inline-block bg-slate-800 text-white px-10 py-4 rounded-2xl font-bold hover:bg-slate-900 transition shadow-lg hover:scale-105">
+                            Conheça Nosso Espaço
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    
+    <section id="avaliacoes" class="pb-20 gradient-rosa overflow-hidden">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12">
+                <div class="text-center md:text-left">
+                    <span class="text-rosaforte font-bold tracking-widest uppercase text-xs mb-2 block">O que dizem nossos pacientes</span>
+                    <h2 class="text-3xl md:text-5xl font-serif font-bold text-slate-800">Experiências Reais</h2>
+                </div>
+                <div class="hidden md:flex items-center gap-2 mb-2">
+                    <span class="font-bold text-lg">4.9</span>
+                    <div class="star-rating flex text-xl">★★★★★</div>
+                    <span class="text-slate-500 text-sm">(+100 avaliações no Google)</span>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="testimonial-card">
+                    <div class="star-rating mb-4">★★★★★</div>
+                    <p class="text-slate-600 italic mb-6 leading-relaxed">
+                        "A Dra. Nicolly é extremamente atenciosa e detalhista. Fiz meu clareamento e o resultado superou todas as expectativas. O consultório em Maringá é lindo e muito acolhedor!"
+                    </p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-pink-100 rounded-full flex items-center justify-center font-bold text-rosaforte">MA</div>
+                        <div>
+                            <h4 class="font-bold text-slate-800">Maria Antônia</h4>
+                            <p class="text-xs text-slate-400">Paciente há 2 anos</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="star-rating mb-4">★★★★★</div>
+                    <p class="text-slate-600 italic mb-6 leading-relaxed">
+                        "Melhor atendimento que já tive. Estava com receio de fazer a harmonização, mas a Dra. me passou muita segurança e o resultado ficou muito natural."
+                    </p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-pink-100 rounded-full flex items-center justify-center font-bold text-rosaforte">RC</div>
+                        <div>
+                            <h4 class="font-bold text-slate-800">Ricardo Costa</h4>
+                            <p class="text-xs text-slate-400">Paciente de Estética</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card border-rosaforte/20 bg-pink-50/30">
+                    <div class="star-rating mb-4">★★★★★</div>
+                    <p class="text-slate-600 italic mb-6 leading-relaxed">
+                        "Ambiente impecável e profissionalismo nota 10. Recomendo para todos em Maringá que buscam um sorriso perfeito com cuidado humanizado."
+                    </p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-pink-100 rounded-full flex items-center justify-center font-bold text-rosaforte">JP</div>
+                        <div>
+                            <h4 class="font-bold text-slate-800">Juliana Paiva</h4>
+                            <p class="text-xs text-slate-400">Paciente de Rotina</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-16 text-center">
+                <a href="https://www.google.com/maps/search/Dra+Nicolly+Andrade+Maringa" target="_blank" class="text-slate-500 hover:text-rosaforte font-medium underline underline-offset-8 transition">
+                    Ver todas as avaliações no Google Meu Negócio →
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contato" class="bg-white pt-24 pb-12 border-t border-pink-50">
+    <div class="container mx-auto px-6">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-16">
+            
+            <div class="lg:col-span-4 space-y-6">
+                <div class="flex items-center gap-3">
+                    <img src="assets/logo.png" alt="Logo" class="w-10 h-10 object-contain">
+                    <span class="text-xl font-serif font-bold text-slate-800">Dra. Nicolly Andrade</span>
+                </div>
+                <p class="text-slate-500 text-sm leading-relaxed max-w-xs">
+                    Transformando sorrisos em Maringá com um toque de delicadeza e a precisão da odontologia moderna.
+                </p>
+                <div class="flex space-x-3">
+                    <a href="https://instagram.com/seu_perfil" target="_blank" class="footer-social-icon">
+                        </a>
+                    <a href="https://facebook.com/seu_perfil" target="_blank" class="footer-social-icon">
+                        </a>
+                </div>
+            </div>
+
+            <div class="lg:col-span-2">
+                <h4 class="font-bold text-slate-800 mb-6 text-sm uppercase tracking-widest">Navegação</h4>
+                <ul class="space-y-4 flex flex-col">
+                    <a href="#inicio" class="footer-link">Início</a>
+                    <a href="#servicos" class="footer-link">Procedimentos</a>
+                    <a href="#clinica" class="footer-link">Sobre a Dra.</a>
+                    <a href="#avaliacoes" class="footer-link">Avaliações</a>
+                </ul>
+            </div>
+
+            <div class="lg:col-span-3">
+                <h4 class="font-bold text-slate-800 mb-6 text-sm uppercase tracking-widest">Contato</h4>
+                <ul class="space-y-4">
+                    <li class="flex items-start gap-3 text-sm text-slate-500">
+                        <span class="text-rosaforte">📍</span>
+                        <span>Maringá, PR<br><span class="text-xs opacity-70">Rua Rui Barbosa, 714 - zona 7</span>
+                    </li>
+                    <li class="flex items-center gap-3 text-sm text-slate-500">
+                        <span class="text-rosaforte">📞</span>
+                        <span>(44) 99999-9999</span>
+                    </li>
+                    <li class="flex items-center gap-3 text-sm text-slate-500">
+                        <span class="text-rosaforte">✉️</span>
+                        <span>contato@dranicolly.com.br</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="lg:col-span-3">
+                <div class="rounded-3xl overflow-hidden shadow-sm border border-pink-50 aspect-square group">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3661.281362705963!2d-51.94904162474531!3d-23.414201256202137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ecd6d74eadf94d%3A0xd0449bf04bb86bb2!2sR.%20Rui%20Barbosa%2C%20714%20-%20Zona%207%2C%20Maring%C3%A1%20-%20PR%2C%2087020-090!5e0!3m2!1spt-PT!2sbr!4v1778763126826!5m2!1spt-PT!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" 
+                        class="w-full h-full border-0 grayscale hover:grayscale-0 transition-all duration-700" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="pt-8 border-t border-pink-50 flex flex-col md:flex-row justify-between items-center gap-4">
+            <p class="text-slate-400 text-[11px] uppercase tracking-wider text-center md:text-left">
+                © 2026 Dra. Nicolly Andrade — CRO/PR 00.000
+            </p>
+            <p class="text-slate-300 text-[10px] uppercase tracking-tighter">
+                Feito com dedicação para o seu melhor sorriso
+            </p>
+        </div>
+    </div>
+</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
