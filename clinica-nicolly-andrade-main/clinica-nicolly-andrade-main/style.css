@@ -1,0 +1,74 @@
+/* Configurações Globais */
+/*html { scroll-behavior: smooth; }
+
+/* Tailwind Config Injection */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .nav-link { @apply hover:text-rosaforte transition duration-300; }
+    
+    .btn-primary { @apply bg-rosaforte text-white px-8 py-4 rounded-xl font-bold shadow-lg hover:scale-105 transition-all text-center inline-block; }
+    
+    .btn-secondary { @apply border-2 border-rosaforte text-rosaforte px-8 py-4 rounded-xl font-bold hover:bg-white transition-all text-center inline-block; }
+
+    .btn-primary-small { @apply bg-rosaforte text-white px-6 py-2 rounded-full hover:bg-pink-500 transition shadow-md flex items-center gap-2; }
+
+    .section-title { @apply text-3xl md:text-5xl font-serif font-bold text-slate-800 mb-16; }
+
+    .card-procedimento { @apply group cursor-default; }
+
+    .img-container { @apply relative overflow-hidden rounded-[32px] mb-6 h-64 bg-rosabebê border border-pink-100; }
+    
+    .img-container img { @apply w-full h-full object-cover transition-transform duration-500 group-hover:scale-110; }
+}
+
+.gradient-rosa { background: linear-gradient(135deg, #FFF5F7 0%, #FDF2F8 100%); }
+.glass-card { background: rgba(255, 255, 255, 0.4); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.6); }
+.logo-small { width: 40px; height: 40px; }
+.star-rating { color: #FBBF24; } /* Amarelo Google */
+.testimonial-card { 
+    @apply bg-white p-8 rounded-[32px] border border-pink-50 shadow-sm hover:shadow-md transition-shadow duration-300;
+}
+
+.footer-link {
+    @apply text-slate-500 hover:text-rosaforte transition-colors duration-300 text-sm;
+}
+.footer-social-icon {
+    @apply w-10 h-10 bg-white border border-pink-100 rounded-full flex items-center justify-center hover:bg-rosaforte hover:text-white hover:border-rosaforte transition-all duration-300 shadow-sm;
+}
+
+/* Animação suave de flutuação para os cards */
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0px); }
+}
+
+.glass-card {
+    animation: float 6s ease-in-out infinite;
+}
+
+/* Moldura orgânica que se move levemente */
+@keyframes morph {
+    0% { border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; }
+    50% { border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%; }
+    100% { border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; }
+}
+
+#inicio .relative.z-10 {
+    animation: morph 8s ease-in-out infinite;
+}
+
+.glass-header {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
+/* Efeito ao rolar a página */
+.header-scrolled {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+}
