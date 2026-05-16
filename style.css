@@ -1,5 +1,5 @@
 /* Configurações Globais */
-html { scroll-behavior: smooth; }
+/*html { scroll-behavior: smooth; }
 
 /* Tailwind Config Injection */
 @tailwind base;
@@ -37,4 +37,38 @@ html { scroll-behavior: smooth; }
 }
 .footer-social-icon {
     @apply w-10 h-10 bg-white border border-pink-100 rounded-full flex items-center justify-center hover:bg-rosaforte hover:text-white hover:border-rosaforte transition-all duration-300 shadow-sm;
+}
+
+/* Animação suave de flutuação para os cards */
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0px); }
+}
+
+.glass-card {
+    animation: float 6s ease-in-out infinite;
+}
+
+/* Moldura orgânica que se move levemente */
+@keyframes morph {
+    0% { border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; }
+    50% { border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%; }
+    100% { border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; }
+}
+
+#inicio .relative.z-10 {
+    animation: morph 8s ease-in-out infinite;
+}
+
+.glass-header {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
+/* Efeito ao rolar a página */
+.header-scrolled {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
 }
